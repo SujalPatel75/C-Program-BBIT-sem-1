@@ -9,13 +9,13 @@ char name[100], reverse[100];
 puts("Enter your name: ");
 gets(name);
 
-for(i=strlen(name)-1, j=0,i>=0,i--,j++)
+for(i=strlen(name)-1, j=0;i>=0 ;i--,j++)
 {
     reverse[j] = name[i];
 }
 reverse[j] = '\0';
 
-printf("Reverse of string");
+printf("Reverse of string ");
 puts(reverse);
 
 getch();
